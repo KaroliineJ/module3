@@ -18,7 +18,7 @@ export default {
         static: {
             directory: path.resolve(__dirname, 'public')
         },
-        historyApiFallback: true,
+        watchfiles:['src/**/*'],
         open: true,
         port: 9000,
         compress: true,
@@ -44,7 +44,7 @@ export default {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.njk'
+            template: './src/pages/index.njk'
         }),
       
     ],
